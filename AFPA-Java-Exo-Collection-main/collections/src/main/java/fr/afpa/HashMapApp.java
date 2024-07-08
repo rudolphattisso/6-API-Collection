@@ -18,25 +18,25 @@ public class HashMapApp {
         HashMap<String,String> capitalesCities = new HashMap<String,String>();
 
         // TODO Ajoutez des paires clé/valeur à votre HashMap - au moins 5 paires
-        capitalesCities.put("Gabon", "Libreville")
-
-        // TODO Récupérez la valeur d'une de vos paires
-        
-
+        capitalesCities.put("Gabon", "Libreville");
+        capitalesCities.put("TOGO", "Lomé");
+        capitalesCities.put("Bénin", "Cotonou");
+        capitalesCities.put("France", "Paris");
+        capitalesCities.put("Camerooun", "Douala");
         // TODO Vérifiez si une de vos clés est contenue dans la collection
        
-
+        capitalesCities.get("Gabon");
         // TODO Vérifiez si une de vos valeurs est contenue dans la collection
-       
+       capitalesCities.get("Lomé");
 
-        // TODO Ajoutez une paire clé/valeur à votre HashMap
-        
-
+    
         // TODO Utilisez une méthode pour trouver le nombre de paires (la longueur de votre HashMap) et affichez la en console
-        
+        System.out.println(capitalesCities.size());
 
         // TODO Affichez toutes les clés de votre HashMap (avec une boucle for each & avec une méthode de HashMap)
-        
+        for (String string : args) {
+            
+        }
 
         // TODO Affichez toutes les valeurs de votre HashMap (avec une boucle for each & avec une méthode de HashMap)
        
