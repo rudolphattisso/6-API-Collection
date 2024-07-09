@@ -38,14 +38,14 @@ public class HashMapApp {
         }
         // Affichez toutes les valeurs de votre HashMap (avec une boucle for each &
         // avec une méthode de HashMap)
-        for (String values : capitalesCities.values()) {
-            System.out.println("affichage des valeurs" + values + ". \n");
+        for (String value : capitalesCities.values()) {
+            System.out.println("affichage des valeurs" + value + ". \n");
         }
         // Affichez toutes les clés/valeurs de votre HashMap (avec une boucle for
         // each & avec une méthode de HashMap)
 
-        for (String keys : capitalesCities.keySet()) {
-            System.out.println(" affichage des clé/valeurs\n" + keys + " " + capitalesCities.get(keys)+ "\n");
+        for (String key : capitalesCities.keySet()) {
+            System.out.println(" affichage des clé/valeurs\n" + key + " " + capitalesCities.get(key)+ "\n");
         }
         // Supprimez une de vos paires
         capitalesCities.remove("Bénin");
