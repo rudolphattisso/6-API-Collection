@@ -4,7 +4,6 @@ import java.util.HashMap;
 
 //TODO Faites l'import de java HashMap
 
-
 public class HashMapApp {
     public static void main(String[] args) {
 
@@ -13,49 +12,50 @@ public class HashMapApp {
         // https://www.w3schools.com/java/java_hashmap.asp
         // https://www.jmdoudoux.fr/java/dej/chap-collections.htm#collections-5
 
+        // Instanciez une nouvelle HashMap sur le theme de votre choix
+        HashMap<String, String> capitalesCities = new HashMap<String, String>();
 
-        // TODO Instanciez une nouvelle HashMap sur le theme de votre choix
-        HashMap<String,String> capitalesCities = new HashMap<String,String>();
-
-        // TODO Ajoutez des paires clé/valeur à votre HashMap - au moins 5 paires
+        // Ajoutez des paires clé/valeur à votre HashMap - au moins 5 paires
         capitalesCities.put("Gabon", "Libreville");
-        capitalesCities.put("TOGO", "Lomé");
+        capitalesCities.put("Togo", "Lomé");
         capitalesCities.put("Bénin", "Cotonou");
         capitalesCities.put("France", "Paris");
         capitalesCities.put("Camerooun", "Douala");
-        // TODO Vérifiez si une de vos clés est contenue dans la collection
-       
+        // Vérifiez si une de vos clés est contenue dans la collection
+
         capitalesCities.get("Gabon");
-        // TODO Vérifiez si une de vos valeurs est contenue dans la collection
+        // Vérifiez si une de vos valeurs est contenue dans la collection
        capitalesCities.get("Lomé");
 
-    
-        // TODO Utilisez une méthode pour trouver le nombre de paires (la longueur de votre HashMap) et affichez la en console
+        // Utilisez une méthode pour trouver le nombre de paires (la longueur de
+        // votre HashMap) et affichez la en console
         System.out.println(capitalesCities.size());
 
-        // TODO Affichez toutes les clés de votre HashMap (avec une boucle for each & avec une méthode de HashMap)
-        for (String string : args) {
-            
+        // Affichez toutes les clés de votre HashMap (avec une boucle for each &
+        // avec une méthode de HashMap)
+        for (String key : capitalesCities.keySet()) {
+            System.out.println("affichage des clés \n" + key + ". \n");
         }
+        // Affichez toutes les valeurs de votre HashMap (avec une boucle for each &
+        // avec une méthode de HashMap)
+        for (String values : capitalesCities.values()) {
+            System.out.println("affichage des valeurs" + values + ". \n");
+        }
+        // Affichez toutes les clés/valeurs de votre HashMap (avec une boucle for
+        // each & avec une méthode de HashMap)
 
-        // TODO Affichez toutes les valeurs de votre HashMap (avec une boucle for each & avec une méthode de HashMap)
-       
+        for (String keys : capitalesCities.keySet()) {
+            System.out.println(" affichage des clé/valeurs\n" + keys + " " + capitalesCities.get(keys)+ "\n");
+        }
+        // Supprimez une de vos paires
+        capitalesCities.remove("Bénin");
 
-
-        // TODO Affichez toutes les clés/valeurs de votre HashMap (avec une boucle for each & avec une méthode de HashMap)
-        
-
-        // TODO Supprimez une de vos paires
-       
-
-        // TODO Vérifiez si votre HashMap est vide
-       
-
-        // TODO Supprimez tous les éléments de votre HashMap
-      
-
-        // TODO Refaites la vérification
-    
+            System.out.println(
+                    "après avoir retiré une paire, voici la liste \n" + capitalesCities);
+        //Vider la HashMap et vérifiez si votre HashMap est vide
+        capitalesCities.clear();
+        System.out.println("la liste à bien été vidée \n" + capitalesCities);
 
     }
+
 }

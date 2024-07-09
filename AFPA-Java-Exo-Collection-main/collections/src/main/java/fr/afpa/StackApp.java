@@ -11,41 +11,45 @@ public class StackApp {
         // https://www.youtube.com/watch?v=KInG04mAjO0
         
 
-        // TODO Instanciez une nouvelle Stack(Pile) sur le theme de votre choix
-        
+        // Instanciation d'une nouvelle Stack(Pile) sur le theme de mon choix
+        Stack <String> myStackOfCars = new Stack<String>();
 
-        // TODO Ajoutez des valeurs dans votre stack
-            
+        //  Ajout des valeurs dans votre stack
+            myStackOfCars.push("Lamborgini");
+            myStackOfCars.push("Mazerrati");
+            myStackOfCars.push("Bugatti");
+        
+        // Affichage votre stack
+            for (String stackToPrint : myStackOfCars) {
+                System.out.println(stackToPrint);
+                
+            }
 
-        // TODO Ajoutez une valeur au début de la stack
-        
+        // Suppression de l'élément du dessus de la stack;
+            myStackOfCars.pop();
+           for (String stackToPrint2 : myStackOfCars) {
+            System.out.println("\n after delete \n" + stackToPrint2 + "\n");
+           }
+        // Affichage de l'élément du dessus de la stack
+        System.out.println(myStackOfCars.peek());
 
-        // TODO Affichez votre stack
-        
-
-        // TODO Supprimez l'élément du dessus de votre stack
-        
-        
-        // TODO Affichez l'élément du dessus de votre stack
-        
-
-        // TODO Supprimez le premier élément de votre stack
-        
-
-        // TODO Affichez le premier élément de votre stack
-        
        
-        // TODO Cherchez et affichez la position d'un de vos éléments (la valeur indiquera la position de l'élément par rapport au dessus de la stack)
-           
+        // Recherche et affichage de la position d'un des éléments (la valeur indiquera la position de l'élément par rapport au dessus de la stack);
+        String elementToSearch = "Mazerrati";   
+        int position = myStackOfCars.search(elementToSearch);
 
-        // TODO Vérifiez si votre stack est vide 
-        
+        if(position != -1){
+            System.out.println("La position de l'élément " + elementToSearch + " par rapport au sommet de la pile est : " + position);
+        }else{
+           System.out.println( "La position de l'élément " + elementToSearch + " n'est pas présent dans la pile.");
+        } 
 
-        // TODO Supprimez tous les éléments de votre stack
-        
+        // Supprimez tous les éléments de votre stack
+        myStackOfCars.removeAllElements();
 
-        // TODO Refaites la vérification
-       
+        // Vérifiez si votre stack est vide 
+        System.out.println("le cotenude ma stack est" +myStackOfCars);
+
 
     }
 }
